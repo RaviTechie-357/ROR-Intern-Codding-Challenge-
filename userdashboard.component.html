@@ -1,0 +1,28 @@
+<div>
+    <h2>User Dashboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Store Name</th>
+          <th>Address</th>
+          <th>Average Rating</th>
+          <th>My Rating</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let store of stores">
+          <td>{{ store.name }}</td>
+          <td>{{ store.address }}</td>
+          <td>{{ store.averageRating }}</td>
+          <td>
+            <input type="number" [(ngModel)]="store.userRating" min="1" max="5" />
+          </td>
+          <td>
+            <button (click)="submitRating(store.id, store.userRating)">Submit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

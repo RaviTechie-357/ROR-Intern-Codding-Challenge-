@@ -1,0 +1,77 @@
+/* Container Styles */
+.login-container {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 50px auto; /* Center the form horizontally and add some vertical space */
+    padding: 30px; /* Add padding around the content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* Gradient background */
+    color: white; /* White text color */
+  }
+  
+  /* Heading Styles */
+  h2 {
+    text-align: center; /* Center the heading */
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+  }
+  
+  /* Form Element Styles */
+  form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* Label Styles */
+  label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below the label */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  }
+  
+  /* Input Styles */
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px; /* Padding inside the input */
+    margin-bottom: 15px; /* Space below the input */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: white; /* White text color */
+    transition: background 0.3s ease; /* Transition for background change */
+  }
+  
+  /* Input Focus Effect */
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.2); /* Darker background on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 12px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ff6b6b; /* Soft red background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    background-color: #ff4c4c; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Error Message Styles */
+  p {
+    color: #ffdddd; /* Light red color for error messages */
+    text-align: center; /* Center error messages */
+    margin-top: 10px; /* Space above the error message */
+  }
+  
